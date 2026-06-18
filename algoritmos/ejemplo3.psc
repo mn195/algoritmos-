@@ -1,4 +1,4 @@
 Proceso ejemplo3
-	definir num1 Como Entero
-	leer num1;
+	definir A Como Entero
+	leer A;
 FinAlgoritmo

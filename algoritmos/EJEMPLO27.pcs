@@ -1,0 +1,29 @@
+// Función que recibe por VALOR (Copia)
+SubProceso modificarPorValor ( numeroCopia Por Valor )
+   numeroCopia <- numeroCopia + 50;
+   Escribir "Dentro de la función (Por Valor): ", numeroCopia;
+FinSubProceso
+ 
+// Función que recibe por REFERENCIA (Dirección de memoria original)
+SubProceso modificarPorReferencia ( numeroOriginal Por Referencia )
+   numeroOriginal <- numeroOriginal + 50;
+   Escribir "Dentro de la función (Por Referencia): ", numeroOriginal;
+FinSubProceso
+ 
+Proceso ejemplo27
+   Definir miNumero Como Entero;
+  
+   // CASO 1: Paso por Valor
+   miNumero <- 10;
+   Escribir "--- PRUEBA POR VALOR ---";
+   Escribir "Antes de la función: ", miNumero;
+   modificarPorValor(miNumero);
+   // La variable original permanece intacta 
+   Escribir "Después de la función: ", miNumero; 
+
+   // caso 2paso por referencia 
+   miNumero = 10
+   Escribir "prueba de referencia"
+   Escribir "antes de la funcion", miNumero;
+
+   FinAlgoritmo
